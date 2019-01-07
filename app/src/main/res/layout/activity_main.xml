@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.servicedemo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/btnStartService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="startService"
+            android:text="Start Services"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="241dp" />
+
+        <Button
+            android:id="@+id/btnStopService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnStartService"
+            android:layout_alignLeft="@+id/btnStartService"
+            android:layout_alignRight="@+id/btnStartService"
+            android:layout_alignStart="@+id/btnStartService"
+            android:layout_below="@+id/btnStartService"
+            android:onClick="stopService"
+            android:text="Stop Services"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="231dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
